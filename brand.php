@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color:black;
+
+}
+.image-container {
+  width: 100%;
+  height: 50%;
+}
+
+.image-wrapper {
+  float: left;
+  width: 200px;
+  height: 900px;
+  margin: 5px;
+  overflow: hidden;
+position:relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.5);
+}
+
+.image-wrapper:hover .overlay {
+  opacity: 2;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#about-content {
+color:red;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+font-size:25px;
+}
+footer {
+  background-color:black;
+  color:#FF0000;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+font-size:35px;
+}
+
+footer p {
+  font-size: 55px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+ <section id="about-content">
+<h2>UPCOMING PRODUCTS</h2>
+</section>
+  <div class="image-container">
+    <div class="column">
+      <div class="image-wrapper">
+        <img src="product 22.jpg" alt="Image 1">
+        <div class="overlay"></div>
+      </div>
+      <div class="image-wrapper">
+        <img src="product 23.jpg" alt="Image 2">
+        <div class="overlay"></div>
+      </div>
+      <div class="image-wrapper">
+        <img src="product 24.jpg" alt="Image 3">
+        <div class="overlay"></div>
+      </div>
+ <div class="image-wrapper">
+        <img src="product 25.jpg" alt="Image 3">
+        <div class="overlay"></div>
+      </div>
+ <div class="image-wrapper">
+        <img src="product 26.jpg" alt="Image 3">
+        <div class="overlay"></div>
+      </div>
+ <div class="image-wrapper">
+        <img src="product 29.jpg" alt="Image 3">
+        <div class="overlay"></div>
+      </div>
+ <div class="image-wrapper">
+        <img src="product 28.jpg" alt="Image 3">
+        <div class="overlay"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+<footer>
+REGISTER YOURSELF FOR STAYING TUNED ON UPCOMING PRODUCTS!!!
+</footer>
+</body>
+</html>

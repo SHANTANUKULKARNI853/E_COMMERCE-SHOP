@@ -1,0 +1,84 @@
+literature survey 
+1. refernce website - dyavol x launched by aryan khan .
+2. product images reference - superverk , urban monkey , bonkers , bewakoof
+3. extra help for html and css desings - codepenio
+4. website for reference :- superverk , urban monkey , bonkers , bewakoof.
+
+system development 
+1. working and architecture :-
+User Registration and Authentication:
+Users register on the website by providing their personal details and creating an account.
+Authentication mechanisms (e.g., username/password, social media login) verify user identity.
+
+Product Catalog:
+The website displays a catalog of available products, organized into categories and subcategories.
+Each product listing includes details such as name, description, price, images, and other relevant information.
+
+Product Detail Page:
+Clicking on a product from the catalog or search results leads to the product detail page.
+The page displays comprehensive information about the product, including images, descriptions, specifications, reviews, and ratings.
+
+Shopping Cart:
+Users can add products to their shopping cart for purchase.
+The shopping cart maintains a list of selected items, quantities, prices, and calculates the total cost.
+
+Checkout Process:
+When users are ready to make a purchase, they proceed to the checkout process.
+The checkout process typically involves providing shipping and billing information, selecting payment method, and reviewing the order details.
+
+Payment Integration:
+The website integrates with payment gateways to securely process payment transactions.
+Users can make payments using various methods such as credit/debit cards, digital wallets, or bank transfers.
+
+Order Processing and Fulfillment:
+Once a successful payment is made, the website generates an order confirmation.
+The order is processed, and the fulfillment process begins, including packaging, shipping, and delivery tracking.
+
+User Account Management:
+Users can manage their account information, update personal details, view order history, and track order statuses.
+The website may provide additional features like wishlists, saved addresses, and personalized recommendations.
+
+Admin Panel:
+An admin panel or dashboard allows website administrators to manage products, inventory, orders, and customer information.
+Admins can add or update product listings, track sales, manage stock levels, and handle customer support.
+
+Security and Performance:
+eCommerce websites implement security measures to protect user data, secure transactions, and prevent unauthorized access.
+Performance optimization techniques, such as caching, image compression, and server optimization, are employed to ensure fast and responsive user experience
+                            FRONTEND:-
+                               1. html - for designing basic structure.
+			       2. css -  for desinging styles for the page 
+			       3. js - scrpting for page 
+                            BACKEND:-
+                               1. php - for creating a database
+                               2. mysql - for saving database.
+
+ARCHITECTURE DESIGN :-               
+	       +--------------------+
+              |     User Browser    |
+              +---------+----------+
+                        |
+                        v
+              +--------------------+
+              |     Load Balancer   |
+              +---------+----------+
+                        |
+                        v
+              +--------------------+
+              |    Web Application  |
+              |       Server       |
+              +---------+----------+
+                        |
+                        v
+            +----------------------------+
+            |    Application Backend     |
+            |   (APIs, Business Logic)   |
+            +-------------+--------------+
+                          |
+                          v
+          +----------------------------+
+          |       Database Server       |
+          |    (User, Product, Order)   |
+          +----------------------------+
+			       
+2. user interface design :-  screenshot                           

@@ -1,0 +1,114 @@
+/* Global Styles */
+body{
+  background-image: url('dyvaol.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;	
+}
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Cart Styles */
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  a {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .total {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .empty-cart {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+  }
+  
+  /* Colorful Styles */
+  .container {
+    background-color: #eaf2ff;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  table {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  th {
+    background-color: #4287f5;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e7f3ff;
+  }
+  
+  tr:hover {
+    background-color: #d6eaff;
+  }
+  
+  a {
+    color: #ff5959;
+  }
+  
+  .total {
+    color: #333;
+  }
+  
+  .empty-cart {
+    color: #888;
+  }
+  
+  .product-image {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
