@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <div id="userList"></div>
+  <button id="logoutButton">Log Out</button>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+
+    const firebaseConfig = {
+      // Your Firebase configuration
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);  
+    const db = getFirestore(app);
+
+    onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        const token = await user.getIdTokenResult();
+        if (token.claims.admin) {
+          const usersQuery = collection(db, "users");
+          const querySnapshot = await getDocs(usersQuery);
+          const userListDiv = document.getElementById('userList');
+          querySnapshot.forEach((doc) => {
+            const userData = doc.data();
+            const userElement = document.createElement('div');
+            userElement.textContent = `User: ${userData.name}, Email: ${userData.email}`;
+            userListDiv.appendChild(userElement);
+          });
+        } else {
+          window.location.href = 'login.html';
+        }
+      } else {
+        window.location.href = 'login.html'; 
+      }
+    });
+
+    document.getElementById('logoutButton').addEventListener('click', async () => {
+      try {
+        await signOut(auth);
+        window.location.href = 'login.html'; 
+      } catch (error) {
+        console.error('Error signing out:', error.message);
+      }
+    });
+  </script>
+</body>
+</html>
